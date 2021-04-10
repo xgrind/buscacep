@@ -48,11 +48,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th><?= $cep->cep ?></th>
-                        <th><?= $cep->logradouro ?></th>
-                        <th><?= $cep->bairro ?></th>
-                        <th><?= $cep->localidade ?></th>
-                        <th><?= $cep->uf ?></th>
+                        <th><?= ($cep->cep) ? $cep->cep : 'Não registrado' ?></th>
+                        <th><?= ($cep->logradouro) ? $cep->lougradouro : 'Não registrado' ?></th>
+                        <th><?= ($cep->bairro) ? $cep->bairro : 'Não registrado' ?></th>
+                        <th><?= ($cep->localidade) ? $cep->localidade : 'Não registrado' ?></th>
+                        <th><?= ($cep->uf) ? $cep->uf : 'Não registrado' ?></th>
                     </tr>                    
                 </tbody>
             </table>
